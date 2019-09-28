@@ -10,12 +10,14 @@
   "dependencies": {
     "bootcatch-themes": "^1.2.0",
     "bootstrap": "^4.3.1",
+    "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
