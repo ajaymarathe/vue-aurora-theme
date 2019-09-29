@@ -12,9 +12,6 @@ import "font-awesome/css/font-awesome.min.css";
 //  bootstrap js
 import "bootstrap/dist/js/bootstrap.min.js";
 
-
-
-
 Vue.config.productionTip = false;
 
 new Vue({

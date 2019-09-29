@@ -2,7 +2,7 @@
   <div class="home">
     <aurora-navbar></aurora-navbar>
 
-    <div class="container-fluid">
+    <div class="container-fluid"> 
       <div class="row">
         <div class="col-md-2 pr-0">
           <aurora-sidebar></aurora-sidebar>
@@ -25,10 +25,20 @@
             </div>
 
             <div class="row mt-4">
-              <div class="col-md-6">
-                <div class="card shadow-sm">
+              <div class="col-md-7">
+                <div class="card shadow-sm" style="background: #132441;">
+                  <div class="card-header text-white d-flex justify-content-between">
+                    <span>Traffic</span>
+                    
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">Week</button>
+                        <button type="button" class="btn btn-primary">Month</button>
+                        <button type="button" class="btn btn-primary">Year</button>
+                      </div>
+                    
+                  </div>
                   <div class="card-body">
-                    <AuroraLineChart></AuroraLineChart>  
+                    <AuroraLineChart ></AuroraLineChart>  
                   </div>  
                 </div>
               </div>
