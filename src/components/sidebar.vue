@@ -8,7 +8,7 @@
         </li>
         <li class="list-group-item">
           <i class="fa fa-user" aria-hidden="true"></i>
-          <router-link to="/">User Profile</router-link>
+          <router-link to="/user">User Profile</router-link>
         </li>
         <li class="list-group-item">
           <i class="fa fa-table" aria-hidden="true"></i>

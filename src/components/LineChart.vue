@@ -1,6 +1,6 @@
 <template>
   <div class="small">
-    <line-chart :chart-data="datacollection" style='width:400px;height:auto;'></line-chart>
+    <line-chart :chart-data="datacollection"></line-chart>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      datacollection: {},
+      datacollection: {}
     };
   },
   mounted() {
@@ -21,15 +21,18 @@ export default {
   },
   methods: {
     fillData() {
+      // hide grid lines
+      Chart.defaults.scale.gridLines.display = false;
+
       this.datacollection = {
-        labels: ["Jan", "Feb", "Mar", "April", "May", "June"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug"],
         datasets: [
           {
-            label: "# Traffic",
-            data: [0, 20, 10, 30, 15, 40, 20, 50, 50],
-            backgroundColor: ["#132441"],
-            borderColor: ["white"],
-            borderWidth: 3
+            label: "Total Traffic",
+            backgroundColor: "#172B4E",
+            borderColor: "#5E72E5",
+            data: [0, 20, 10, 30, 15, 35, 20, 50],
+            borderWidth: 4
           }
         ]
       };

@@ -5,10 +5,10 @@
         <div>
           <p>{{ title }}</p>
           <p class="bold">{{value}}</p>
-          <p class="span">{{subTitle}}</p>
+          <p class="span">{{subtitle}}</p>
         </div>
-        <i  v-if="icon"  :class="[icon, bgColor]"  aria-hidden="true"></i>
-        <i v-else class="fa fa-check-square rounded" :class="bgColor" aria-hidden="true"></i>
+        <i v-if="icon" :class="[icon, bgcolor]" aria-hidden="true"></i>
+        <i v-else class="fa fa-check-square rounded" :class="bgcolor" aria-hidden="true"></i>
       </div>
     </div>
   </div>
@@ -17,10 +17,9 @@
 <script>
 export default {
   name: "state-card",
-  props: ["bgColor", "color", "title","value","subTitle","icon"],
+  props: ["bgcolor", "color", "title", "value", "subtitle", "icon"],
   data: function() {
-    return {
-    };
+    return {};
   }
 };
 </script>

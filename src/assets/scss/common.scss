@@ -13,6 +13,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
         border: 0;
+
         ul,
         li {
             padding-top: .5rem;
@@ -20,10 +21,12 @@
             margin-left: 1rem;
 
         }
+
         a {
             text-decoration: none;
         }
-        .list-unstyled a{
+
+        .list-unstyled a {
             font-size: 14px;
         }
     }
@@ -46,6 +49,9 @@
     }
 }
 
+body {
+    background: #F6F7FD;
+}
 
 // navbar 
 .navbar {
@@ -96,6 +102,34 @@
             color: white;
         }
     }
+
+    .comment-section,
+    .customer-list {
+        .card-body {
+            height: 500px;
+            overflow: auto;
+        }
+    }
+}
+
+/* comments components*/
+.comment {
+    p {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
+
+/* customer list */
+.customer-list {
+
+    th,
+    td {
+        font-size: 14px;
+    }
 }
 
 // gradient classes
@@ -113,4 +147,45 @@
 
 .bg-gradient-skyblue {
     background: linear-gradient(87deg, #11cdef 0, #1171ef 100%) !important;
+}
+
+/*footer */
+.footer {
+
+    p,
+    a {
+        font-size: 14px;
+    }
+}
+
+/**user profile **/
+.user-card {
+    .card {
+        height: auto;
+    }
+
+    .user-img {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: -100px;
+
+        img {
+            width: 40%;
+        }
+    }
+
+    .social-icons {
+        font-size: 2rem;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/** icons **/
+.icons {
+    i {
+        font-size: 2rem;
+    }
 }
